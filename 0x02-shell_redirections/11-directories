@@ -1,2 +1,2 @@
 #!/bin/bash
-du -S
+count=$(find . -mindepth l -maxdepth l -type d | wc -l)

@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head
+find . -maxdepth l -type f -print '%T@ %p\n' | sort -rn | cut -d" " -f2-
